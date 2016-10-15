@@ -19,10 +19,10 @@ public class PP2Problema9 {
     }
     public static void mostrarNumero(){
         int numeroingresado = solicitarDatos(" numero a separar ");
-        System.out.print((numeroingresado/1000)+000);
-        System.out.print((numeroingresado/100)+00);
-        System.out.print((numeroingresado/10)+0);
-        System.out.print((numeroingresado/1));
+        System.out.print((numeroingresado/1000)+000 + "\n");
+        System.out.print((numeroingresado/100)+00 + "\n");
+        System.out.print((numeroingresado/10)+ 0 + "\n");
+        System.out.print((numeroingresado/1)+ "\n");
     }
         public static int solicitarDatos(String d){ //Solicita datos
         int miDato;
