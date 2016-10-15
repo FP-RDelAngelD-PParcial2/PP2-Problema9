@@ -16,17 +16,16 @@ public class PP2Problema9 {
      */
     public static void main(String[] args) {
         int[]n = new int [4];
-        System.out.print(n.length);
         mostrarNumero(n);
     }
     public static void mostrarNumero(int[]n){
         int a = solicitarDatos(" numero a convertir ");
         for(int i =0; i<n.length; i++){
-            n[0]=1000*a;
-            n[1]=100*a;
-            n[2]=10*a;
-            n[3]=1*a;
-            System.out.print("El resultado es " + "\n" + n[i]);
+            n[0]=(1000*a)%10000;
+            n[1]=(100*a)%1000;
+            n[2]=(10*a)%100;
+            n[3]=(1*a)%10;
+            System.out.print("\n" + "El resultado es " + "\n" + n[i]);
         }   
     }
         public static int solicitarDatos(String d){ //Solicita datos
