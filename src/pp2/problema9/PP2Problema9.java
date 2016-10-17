@@ -15,24 +15,36 @@ public class PP2Problema9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[]n = new int [4];
-        mostrarNumero(n);
+      muestraResultado(convertirNumero());
     }
-    public static void mostrarNumero(int[]n){
-        int a = solicitarDatos(" numero a convertir ");
-        for(int i =0; i<n.length; i++){
-            n[0]=(1000*a)%10000;
-            n[1]=(100*a)%1000;
-            n[2]=(10*a)%100;
-            n[3]=(1*a)%10;
-            System.out.print("\n" + "El resultado es " + "\n" + n[i]);
-        }   
-    }
-        public static int solicitarDatos(String d){ //Solicita datos
+     public static int solicitarDatos(String d){ //Solicita datos
         int miDato;
         Scanner entradaEscaner = new Scanner(System.in);
         System.out.print("Introduce el dato " + d);
         miDato= entradaEscaner.nextInt();
         return miDato;
+    }
+    public static String convertirNumero(){
+        int a = solicitarDatos(" numero a convertir ");
+        String r="";
+        r=r+a;
+        return r;
+    }
+    public static void muestraResultado(String b){
+        char cad [];
+        int a, c, d, e, f;
+        c=0;
+        d=0;
+        e=0;
+        f=0;
+        cad=b.toCharArray();
+        a=cad.length-1;
+        while(a>=cad.length){
+            c=cad[0]*1000;
+            d=cad[1]*100;
+            e=cad[2]*10;
+            f=cad[3]*1;
+        }
+        System.out.print("El resultado es: " + c + " + " + d + " + " + e + " + " + f + " = " + b);
     }
 }
