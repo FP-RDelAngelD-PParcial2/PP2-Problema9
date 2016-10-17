@@ -25,23 +25,21 @@ public class PP2Problema9 {
         return miDato;
     }
     public static String convertirNumero(){
-        int a = solicitarDatos(" numero a convertir ");
-        String r="";
-        r=r+a;
-        return r;
+        int a = solicitarDatos(" numero a convertir "); //Se ingresa el numero de 4 digitos //4589
+        String r=""; //Se declara un string para guardar el numero
+        r=r+a;//El numero se transorma a String //""+4589 
+        return r;//Regresa 4589 en forma de dato String
     }
     public static void muestraResultado(String b){
-        char cad [];
-        int a;
-        String c, d, e, f;
+        char cad []; //Se crea un arreglo de caracteres
+        String c, d, e, f; //Se declaran variables String para guardar el valor de la posicion del arreglo
 
-        cad=b.toCharArray();
-        a=cad.length-1;
+        cad=b.toCharArray(); //El String se vuelve un arreglo de caracteres
 
-            c=cad[0]+"000";
-            d=cad[1]+"00";
-            e=cad[2]+"0";
-            f=cad[3]+"";
+            c=cad[0]+"000"; //A la posicion 0 se le agregan 000
+            d=cad[1]+"00";  //A la posicion 1 se le agregan 00
+            e=cad[2]+"0";   //A la posicion 2 se le agregan 0
+            f=cad[3]+"";    //A la posicion 3 se le agregan ""
         
         System.out.print("El resultado es: " + c + "+" + d + "+" + e + "+" + f + "=" + b);
     }
