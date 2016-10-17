@@ -32,19 +32,17 @@ public class PP2Problema9 {
     }
     public static void muestraResultado(String b){
         char cad [];
-        int a, c, d, e, f;
-        c=0;
-        d=0;
-        e=0;
-        f=0;
+        int a;
+        String c, d, e, f;
+
         cad=b.toCharArray();
         a=cad.length-1;
-        while(a>=cad.length){
-            c=cad[0]*1000;
-            d=cad[1]*100;
-            e=cad[2]*10;
-            f=cad[3]*1;
-        }
-        System.out.print("El resultado es: " + c + " + " + d + " + " + e + " + " + f + " = " + b);
+
+            c=cad[0]+"000";
+            d=cad[1]+"00";
+            e=cad[2]+"0";
+            f=cad[3]+"";
+        
+        System.out.print("El resultado es: " + c + "+" + d + "+" + e + "+" + f + "=" + b);
     }
 }
